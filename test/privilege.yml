@@ -1,0 +1,101 @@
+- name: 首页
+  key: home
+  type: 1
+  level: 1
+  path: /home
+  icon: home
+- name: 权限管理
+  key: rabc
+  type: 1
+  level: 1
+  path: /rabc
+  icon: safetycertificate
+  children:
+    - name: 用户管理
+      key: user
+      type: 1
+      level: 2
+      path: /rabc/user/index
+      children:
+        - name: 用户列表
+          key: list
+          type: 2
+          level: 3
+        - name: 用户详情
+          key: detail
+          type: 2
+          level: 3
+        - name: 新增用户
+          key: create
+          type: 2
+          level: 3
+        - name: 更新用户
+          key: update
+          type: 2
+          level: 3
+        - name: 删除用户
+          key: delete
+          type: 2
+          level: 3
+    - name: 角色管理
+      key: role
+      type: 1
+      level: 2
+      path: /rabc/role/index
+      children:
+        - name: 角色列表
+          key: list
+          type: 2
+          level: 3
+        - name: 角色详情
+          key: detail
+          type: 2
+          level: 3
+        - name: 新增角色
+          key: create
+          type: 2
+          level: 3
+        - name: 编辑角色
+          key: update
+          type: 2
+          level: 3
+        - name: 删除角色
+          key: delete
+          type: 2
+          level: 3
+    - name: 资源管理
+      key: privilege
+      type: 1
+      level: 2
+      path: /rabc/privilege/index
+      children:
+        - name: 资源列表
+          key: list
+          type: 2
+          level: 3
+        - name: 资源详情
+          key: detail
+          type: 2
+          level: 3
+        - name: 更新资源
+          key: update
+          type: 2
+          level: 3
+
+- name: 通用设置
+  key: setting
+  type: 1
+  level: 1
+  path: /setting
+  icon: setting
+  children:
+    - name: 系统设置
+      key: system
+      type: 1
+      level: 2
+      path: /setting/system/index
+    - name: 个人设置
+      key: personal
+      type: 1
+      level: 2
+      path: /setting/personal/index
